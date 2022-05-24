@@ -11,6 +11,7 @@
   grid-template-areas:
     'dashboard header'
     'dashboard content';
+  font-family: 'Inter', sans-serif;
 }
 
 .dashboard-component {
@@ -23,4 +24,13 @@
 
 .content-component {
   grid-area: content;
+}
+
+.svg-text {
+  display: flex;
+  align-items: center;
+}
+
+.svg-container {
+  margin-right: 10px;
 }
