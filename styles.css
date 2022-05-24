@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 .container {
   display: grid;
   grid-template-rows: 1fr 5fr;
@@ -14,4 +11,16 @@ body {
   grid-template-areas:
     'dashboard header'
     'dashboard content';
+}
+
+.dashboard-component {
+  grid-area: dashboard;
+}
+
+.header-component {
+  grid-area: header;
+}
+
+.content-component {
+  grid-area: content;
 }
