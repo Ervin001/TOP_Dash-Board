@@ -3,6 +3,7 @@
   --header-color: rgb(255 255 255);
   --content-color: rgb(226 232 240);
   --card-highlight-color: rgb(241 180 41);
+  --dashboard-font-color: rgb(255 255 255);
 }
 
 * {
@@ -19,6 +20,7 @@
     'dashboard header'
     'dashboard content';
   font-family: 'Inter', sans-serif;
+  height: 100vh;
 }
 
 .dashboard-component {
@@ -39,18 +41,16 @@
 
 .svg-text {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  gap: 12px;
+  margin-left: 12px;
 }
 
-.svg-container {
-  margin: 5px 20px;
-}
-
-.dashboard-text {
-  font-size: 1.8em;
+.dash-top .svg-text:first-of-type {
+  margin-top: 20px;
 }
 
 .text {
-  font-size: 1.2em;
-  font-weight: 600;
+  color: var(--dashboard-font-color);
 }
