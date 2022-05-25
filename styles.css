@@ -3,6 +3,7 @@
   --header-color: rgb(255 255 255);
   --content-color: rgb(226 232 240);
   --card-highlight-color: rgb(241 180 41);
+  --card-color: rgb(255 255 255);
   --dashboard-font-color: rgb(255 255 255);
   --searchbar-color: rgb(226 232 240);
   --button-background-color: rgb(25 146 212);
@@ -111,4 +112,58 @@ button {
 
 .content-component {
   background-color: var(--content-color);
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 3fr;
+  grid-template-areas:
+    'project-name announcements-name'
+    'grid-content announcement-content'
+    'grid-content trending-name'
+    'grid-content trending-content';
+}
+
+.project {
+  grid-area: project-name;
+  margin-left: 20px;
+}
+
+.bottom-text {
+  align-self: end;
+}
+
+.cards-container {
+  grid-area: grid-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 0.3fr));
+  gap: 29px;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.card {
+  background-color: var(--card-color);
+  display: flex;
+  border-radius: 8px;
+}
+.left-color {
+  background-color: var(--card-highlight-color);
+  width: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.announcements {
+  grid-area: announcements-name;
+}
+
+.announcements-cards {
+  grid-area: announcement-content;
+}
+
+.trending {
+  grid-area: trending-name;
+}
+
+.trending-cards {
+  grid-area: trending-content;
 }
