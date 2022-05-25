@@ -8,6 +8,8 @@
   --searchbar-color: rgb(226 232 240);
   --button-background-color: rgb(25 146 212);
   --button-font-color: rgb(255 255 255);
+  --border-radius-card: 8px;
+  --content-font-color: rgb(128 128 128);
 }
 
 * {
@@ -62,8 +64,6 @@
 .header-component {
   display: flex;
   flex-direction: column;
-
-  box-shadow: 0px 5px 5px rgb(41, 112, 255);
 }
 
 .header-component-top {
@@ -122,6 +122,11 @@ button {
     'grid-content announcement-content'
     'grid-content trending-name'
     'grid-content trending-content';
+  gap: 20px;
+}
+
+.content-text {
+  color: var(--content-font-color);
 }
 
 .project {
@@ -131,13 +136,14 @@ button {
 
 .bottom-text {
   align-self: end;
+  font-weight: 600;
 }
 
 .cards-container {
   grid-area: grid-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 29px;
+  gap: 20px;
   justify-content: start;
   margin-left: 20px;
   padding-bottom: 50px;
@@ -146,7 +152,8 @@ button {
 .card {
   background-color: var(--card-color);
   display: flex;
-  border-radius: 8px;
+  border-radius: var(--border-radius-card);
+  box-shadow: 0px 5px 5px rgb(164, 164, 164);
 }
 .left-color {
   background-color: var(--card-highlight-color);
@@ -177,7 +184,26 @@ button {
 }
 
 .announcements-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   grid-area: announcement-content;
+  background-color: var(--card-color);
+  border-radius: var(--border-radius-card);
+  box-shadow: 0px 5px 5px rgb(164, 164, 164);
+  padding: 12px 20px;
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+
+.announcement-card {
+  padding: 10px 0;
+}
+
+.announcement-card:nth-child(2) {
+  border-top: 1px solid rgb(233 232 233);
+  border-bottom: 1px solid rgb(233 232 233);
 }
 
 .trending {
