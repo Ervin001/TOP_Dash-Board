@@ -165,105 +165,101 @@
       </div>
       <!-- Header Component -->
       <div class="header-component">
-        <div class="header-component-top">
-          <div class="header-component-top-left">
-            <div class="svg-image-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <circle
-                  cx="116"
-                  cy="116"
-                  r="84"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></circle>
-                <line
-                  x1="175.4"
-                  y1="175.4"
-                  x2="224"
-                  y2="224"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></line>
-              </svg>
-            </div>
-            <input type="text" class="search-field" />
-          </div>
-          <div class="header-component-top-right">
-            <div class="svg-image-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <path
-                  d="M56.2,112a71.8,71.8,0,1,1,143.6,0h0c0,35.8,7.5,56.6,14.1,68a8,8,0,0,1-6.9,12H49a8,8,0,0,1-6.9-12c6.6-11.4,14.1-32.2,14.1-68Z"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></path>
-                <path
-                  d="M96,192v8a32,32,0,0,0,64,0v-8"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></path>
-                <path
-                  d="M187.7,17.2a111.1,111.1,0,0,1,40.8,45.4"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></path>
-                <path
-                  d="M27.5,62.6A111.1,111.1,0,0,1,68.3,17.2"
-                  fill="none"
-                  stroke="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="24"
-                ></path>
-              </svg>
-            </div>
-            <div class="user-image"></div>
-            <div class="user-name"><strong>John Doe</strong></div>
+        <div class="search-container">
+          <!-- Search Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <circle
+              cx="116"
+              cy="116"
+              r="84"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></circle>
+            <line
+              x1="175.4"
+              y1="175.4"
+              x2="224"
+              y2="224"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></line>
+          </svg>
+          <input type="text" class="search-field" />
+        </div>
+        <div class="notification-info-container">
+          <!-- Notification bell -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M56.2,112a71.8,71.8,0,1,1,143.6,0h0c0,35.8,7.5,56.6,14.1,68a8,8,0,0,1-6.9,12H49a8,8,0,0,1-6.9-12c6.6-11.4,14.1-32.2,14.1-68Z"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <path
+              d="M96,192v8a32,32,0,0,0,64,0v-8"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <path
+              d="M187.7,17.2a111.1,111.1,0,0,1,40.8,45.4"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+            <path
+              d="M27.5,62.6A111.1,111.1,0,0,1,68.3,17.2"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></path>
+          </svg>
+          <div class="user-image"></div>
+          <div class="user-name">
+            <strong>John Doe</strong>
           </div>
         </div>
-        <div class="header-component-bottom">
-          <div class="header-user-info">
-            <div class="header-user-image"></div>
-            <div class="header-user">
-              <div class="greeting">Hi there,</div>
-              <div class="name-of-user">
-                <h3><strong>John Doe (@John)</strong></h3>
-              </div>
-            </div>
+        <div class="user-info-container">
+          <div class="header-user-image"></div>
+          <div class="greeting">Hi there,</div>
+          <div class="name-of-user">
+            <h3>
+              <strong>John Doe (@John)</strong>
+            </h3>
           </div>
-          <div class="buttons-container">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
+        </div>
+        <div class="buttons-container">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
       </div>
       <!-- Content Component -->
