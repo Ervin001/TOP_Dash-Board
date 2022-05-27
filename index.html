@@ -167,36 +167,39 @@
       <div class="header-component">
         <div class="search-container">
           <!-- Search Icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="#000000"
-            viewBox="0 0 256 256"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <circle
-              cx="116"
-              cy="116"
-              r="84"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-            ></circle>
-            <line
-              x1="175.4"
-              y1="175.4"
-              x2="224"
-              y2="224"
-              fill="none"
-              stroke="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="24"
-            ></line>
-          </svg>
+          <div class="svg-search-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="search-svg"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <circle
+                cx="116"
+                cy="116"
+                r="84"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></circle>
+              <line
+                x1="175.4"
+                y1="175.4"
+                x2="224"
+                y2="224"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="24"
+              ></line>
+            </svg>
+          </div>
           <input type="text" class="search-field" />
         </div>
         <div class="notification-info-container">
@@ -242,13 +245,23 @@
               stroke-width="24"
             ></path>
           </svg>
-          <div class="user-image"></div>
+          <div class="user-image">
+            <img
+              src="./profile-images/usman-yousaf-q2q5CdLuWnI-unsplash.jpg"
+              alt="Avatar"
+            />
+          </div>
           <div class="user-name">
             <strong>John Doe</strong>
           </div>
         </div>
         <div class="user-info-container">
-          <div class="header-user-image"></div>
+          <div class="header-user-image">
+            <img
+              src="./profile-images/usman-yousaf-q2q5CdLuWnI-unsplash.jpg"
+              alt="Avatar"
+            />
+          </div>
           <div class="greeting">Hi there,</div>
           <div class="name-of-user">
             <h3>
